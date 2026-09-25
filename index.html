@@ -1,2 +1,303 @@
-<!-- TODO: construye aquí tu página (Lab #6) -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- Laboratorio #6 - Adrian Maldonado -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adrian Maldonado">
+    <meta name="codigo-sesion" content="LAB6-V9S3">
+    <meta name="description" content="Sitio informativo de la Biblioteca de la Facultad: catálogo, horarios, servicios e inscripción de socios.">
+    <title>Biblioteca de la Facultad | ArkLib</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* CSS interno (integración obligatoria en el head) */
+        #inicio { scroll-margin-top: 12px; }
+        .destacado-interno { border-left: 4px solid #972a20; padding-left: 8px; }
+    </style>
+</head>
+<body>
+
+<noscript>
+    <p>Este sitio usa JavaScript para mostrar el año actual y validar el formulario. Actívalo para una mejor experiencia; el contenido principal seguirá siendo visible.</p>
+</noscript>
+
+<header id="inicio">
+    <a href="#inicio">
+        <img src="img/logo-biblioteca.png" alt="Logotipo de la Biblioteca de la Facultad" width="72" loading="lazy">
+    </a>
+
+    <form action="#" method="get" role="search">
+        <label for="buscar-rapido">Buscar en el catálogo</label>
+        <input type="search" id="buscar-rapido" name="q" placeholder="Título, autor o código..." required>
+        <button type="submit" class="btn">Buscar</button>
+    </form>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="nav-link" href="#catalogo">Catálogo</a></li>
+            <li><a class="nav-link" href="#horarios">Horarios</a></li>
+            <li><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li><a class="nav-link" href="#contacto">Inscripción</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="ficha-1534" class="k-414fed">
+
+    <h1>Biblioteca de la Facultad de Ingeniería</h1>
+
+    <p>
+        Bienvenido al sitio de la <strong>Biblioteca de la Facultad</strong>, un espacio pensado para
+        <em>estudiantes, docentes e investigadores</em>. Nuestro lema, como dice el reglamento interno,
+        es <q cite="https://biblioteca.example.edu/reglamento">el conocimiento se cuida y se comparte</q>.
+        Última actualización: <time datetime="2026-09-24">24 de septiembre de 2026</time>.
+        Consulta el catálogo con el código <code>ISBN</code> o visítanos en la sede
+        <abbr title="Facultad de Ingeniería de Sistemas Computacionales">FISC</abbr>.
+        <mark>Horario extendido durante la semana de exámenes.</mark>
+        <small>Los préstamos especiales requieren aval docente.</small>
+    </p>
+
+    <section id="catalogo">
+        <h2>Catálogo de libros destacados</h2>
+
+        <p>
+            Esta es solo una muestra del catálogo completo, disponible en el sistema
+            <span style="color:#972a20; font-weight:bold;">ArkLib</span> (CSS en línea de ejemplo).
+            El horario anterior <del>de 7:00 a 15:00</del> <ins>ahora es de 7:00 a 19:00</ins>.
+        </p>
+
+        <figure>
+            <img src="img/estanteria-biblioteca.png" alt="Estantería con libros coloridos de la colección de Ingeniería" loading="lazy">
+            <figcaption>Estantería principal de la colección de Ingeniería, sección FISC.</figcaption>
+        </figure>
+
+        <table>
+            <caption>Libros más solicitados este semestre</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Título</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Disponibles</th>
+                    <th scope="col">Ubicación</th>
+                    <th scope="col">Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Estructuras de Datos</th>
+                    <td>R. Villalaz</td>
+                    <td>Programación</td>
+                    <td>4</td>
+                    <td>Estante A-3</td>
+                    <td><code>ED-1101</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Redes y Protocolos</th>
+                    <td>M. Cedeño</td>
+                    <td>Redes</td>
+                    <td>2</td>
+                    <td>Estante B-1</td>
+                    <td><code>RP-2210</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Bases de Datos Aplicadas</th>
+                    <td>J. Herrera</td>
+                    <td>Bases de Datos</td>
+                    <td>0</td>
+                    <td>Estante A-5</td>
+                    <td><code>BD-3305</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Cálculo Vectorial</th>
+                    <td>S. Quintero</td>
+                    <td>Matemática</td>
+                    <td>7</td>
+                    <td>Estante C-2</td>
+                    <td><code>CV-0087</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Circuitos Digitales</th>
+                    <td>A. Botello</td>
+                    <td>Electrónica</td>
+                    <td>3</td>
+                    <td>Estante D-4</td>
+                    <td><code>CD-4412</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Ingeniería de Software</th>
+                    <td>L. Fábrega</td>
+                    <td>Programación</td>
+                    <td>5</td>
+                    <td>Estante A-3</td>
+                    <td><code>IS-5560</code></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Inventario actualizado por última vez el <time datetime="2026-09-24">24/09/2026</time>.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <details>
+            <summary>¿Cómo reservar un libro del catálogo?</summary>
+            <p>
+                Ingresa al sistema con tu carné estudiantil, busca el <kbd>ISBN</kbd> o el título del libro
+                y selecciona <strong>Reservar</strong>. Recibirás una notificación cuando esté disponible
+                en el mostrador de préstamos. El límite normal es 5<sup>to</sup> libro por semestre;
+                los primeros 3<sub>eros</sub> préstamos no requieren aval docente.
+            </p>
+        </details>
+
+        <dl>
+            <dt>Préstamo regular</dt>
+            <dd>Hasta 7 días calendario, renovable una vez si nadie más lo reservó.</dd>
+            <dt>Préstamo especial</dt>
+            <dd>Hasta 2 días, para libros de alta demanda o material de reserva.</dd>
+            <dt>Consulta en sala</dt>
+            <dd>Uso exclusivo dentro de la biblioteca, sin salida del edificio.</dd>
+        </dl>
+    </section>
+
+    <section id="horarios">
+        <h2>Horarios y ubicación</h2>
+
+        <h3>Horario de atención</h3>
+        <ul>
+            <li>Lunes a viernes: 7:00 a. m. — 7:00 p. m.</li>
+            <li>Sábados: 8:00 a. m. — 12:00 m.</li>
+            <li>Domingos y días feriados: cerrado.</li>
+        </ul>
+
+        <h3>Cómo llegar</h3>
+        <p class="destacado-interno">Estamos ubicados en el edificio central del campus, planta baja.</p>
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-79.5350%2C8.9800%2C-79.5150%2C8.9950&layer=mapnik"
+            title="Mapa de ubicación de la Biblioteca de la Facultad"
+            width="100%"
+            height="300"
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios de la biblioteca</h2>
+
+        <article class="card">
+            <h3>Salas de estudio grupal</h3>
+            <p>Cinco salas equipadas con pizarra y toma corriente, reservables por hasta 2 horas.</p>
+        </article>
+
+        <article class="card">
+            <h3>Audioguía de bienvenida</h3>
+            <p>Escucha una breve señal de bienvenida al ingresar al portal:</p>
+            <audio controls>
+                <source src="media/bienvenida.wav" type="audio/wav">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </article>
+
+        <aside>
+            <h2>Consejos para estudiantes</h2>
+            <ol>
+                <li>Renueva tus préstamos antes de la fecha límite desde el portal.</li>
+                <li>Reserva las salas grupales con al menos un día de anticipación.</li>
+                <li>Consulta el catálogo digital antes de venir para confirmar disponibilidad.</li>
+            </ol>
+        </aside>
+    </section>
+
+    <section id="contacto">
+        <h2>Formulario de inscripción como socio</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana Pérez" minlength="3" maxlength="60" autocomplete="name" autofocus>
+
+                <label for="correo">Correo institucional</label>
+                <input type="email" id="correo" name="correo" required placeholder="tucorreo@ejemplo.edu" autocomplete="email" multiple>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{4}-[0-9]{4}" placeholder="6000-0000">
+
+                <label for="carnet">Número de carné</label>
+                <input type="number" id="carnet" name="carnet" min="1000" max="99999" step="1" value="8101">
+
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="nacimiento">
+
+                <label for="clave">Clave de acceso</label>
+                <input type="password" id="clave" name="clave" minlength="8" required>
+
+                <label for="codigo-generado">Código de sesión asignado</label>
+                <input type="text" id="codigo-generado" name="codigo-generado" value="LAB6-V9S3" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+
+                <p>Tipo de socio:</p>
+                <input type="radio" id="socio-estudiante" name="tipo-socio" value="estudiante" checked>
+                <label for="socio-estudiante">Estudiante</label>
+                <input type="radio" id="socio-docente" name="tipo-socio" value="docente">
+                <label for="socio-docente">Docente</label>
+
+                <p>Temas de interés:</p>
+                <input type="checkbox" id="tema-programacion" name="temas" value="programacion">
+                <label for="tema-programacion">Programación</label>
+                <input type="checkbox" id="tema-robotica" name="temas" value="robotica">
+                <label for="tema-robotica">Robótica</label>
+
+                <label for="satisfaccion">Nivel de satisfacción con el servicio actual</label>
+                <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="10" value="8">
+
+                <label for="color-favorito">Color favorito para tu carné</label>
+                <input type="color" id="color-favorito" name="color-favorito" value="#972a20">
+
+                <label for="sitio">Sitio web o portafolio personal</label>
+                <input type="url" id="sitio" name="sitio" placeholder="https://...">
+
+                <label for="hora">Hora preferida de visita</label>
+                <input type="time" id="hora" name="hora">
+
+                <label for="carrera">Carrera</label>
+                <input list="carreras" id="carrera" name="carrera" placeholder="Escribe o elige una opción">
+                <datalist id="carreras">
+                    <option value="Ingeniería en Sistemas Computacionales">
+                    <option value="Ingeniería Industrial">
+                    <option value="Ingeniería Civil">
+                </datalist>
+
+                <label for="sede">Sede que visitas con más frecuencia</label>
+                <select id="sede" name="sede">
+                    <option value="central">Sede Central</option>
+                    <option value="norte">Sede Norte</option>
+                    <option value="virtual">Biblioteca Virtual</option>
+                </select>
+
+                <label for="comentarios">Comentarios adicionales</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea>
+            </fieldset>
+
+            <button type="submit" class="btn">Inscribirme</button>
+        </form>
+    </section>
+
+</main>
+
+<footer id="pie">
+    <ul>
+        <li><a href="#inicio">Acerca de</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <p>Biblioteca de la Facultad &copy; 2026 — Desarrollado por Adrian Maldonado</p>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
  
