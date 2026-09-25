@@ -1,1 +1,205 @@
-/* TODO: escribe aquí tus reglas CSS (Lab #6) */
+/* ============================================================
+   Laboratorio #6 - Adrian Maldonado
+   Tema: Biblioteca de la Facultad
+   ============================================================ */
+
+/* Reset básico: selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selector de elemento */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ea;
+    color: #222222;
+    line-height: 1.5;
+}
+
+/* Selector de elemento (agrupación h1, h2, h3) */
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #972a20; /* color principal del estudiante */
+    margin-bottom: 0.6em;
+}
+
+/* Selector de elemento */
+a {
+    color: #972a20;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------ Encabezado y navegación ------------ */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 5vw;
+    background-color: #1b2a4a;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #972a20; /* color principal usado como fondo */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* ------------ Selector de ID que existe en el HTML ------------ */
+#ficha-1534 {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 5vw;
+}
+
+/* Selector de clase que existe en el HTML (class del main) */
+.k-414fed {
+    border-top: 3px solid #972a20;
+}
+
+/* ------------ Secciones y tarjetas ------------ */
+section {
+    margin-bottom: 2.5rem;
+}
+
+.card {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    background-color: #ffffff;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figcaption {
+    font-size: 0.85em;
+    color: #555555;
+    margin-top: 0.4em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ------------ Tabla ------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #972a20;
+    color: #ffffff;
+}
+
+tfoot {
+    font-size: 0.85em;
+    color: #555555;
+}
+
+/* ------------ Formulario ------------ */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #972a20;
+    padding: 0 0.4em;
+}
+
+form label {
+    display: block;
+    margin-top: 0.6em;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 6px 8px;
+    margin-top: 0.2em;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+}
+
+input[type="search"]:focus,
+textarea:focus {
+    outline: 2px solid #972a20;
+}
+
+/* ------------ Pie de página ------------ */
+#pie {
+    background-color: #1b2a4a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+#pie ul {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    margin-bottom: 0.6em;
+}
+
+#pie a {
+    color: #ffffff;
+}
+
+/* ------------ Media embebido ------------ */
+iframe {
+    border: none;
+    width: 100%;
+}
+
+audio {
+    width: 100%;
+    max-width: 320px;
+}
