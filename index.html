@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Laboratorio #6 - Adrian Maldonado -->
-<header id="inicio">
-    <a href="#inicio">
-        <img src="img/logo-biblioteca.png" alt="Logotipo de la Biblioteca de la Facultad" width="72" loading="lazy">
-    </a>
-
-    <div class="quick-search" role="search">
-        <label for="buscar-rapido">Buscar en el catálogo</label>
-        <input type="search" id="buscar-rapido" name="q" placeholder="Título, autor o código...">
-        <button type="button" class="btn" onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Buscar</button>
-    </div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a class="nav-link" href="#catalogo">Catálogo</a></li>
-            <li><a class="nav-link" href="#horarios">Horarios</a></li>
-            <li><a class="nav-link" href="#servicios">Servicios</a></li>
-            <li><a class="nav-link" href="#contacto">Inscripción</a></li>
-        </ul>
-    </nav>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adrian Maldonado">
+    <meta name="codigo-sesion" content="LAB6-V9S3">
+    <meta name="description" content="Sitio informativo de la Biblioteca de la Facultad: catálogo, horarios, servicios e inscripción de socios.">
+    <title>Biblioteca de la Facultad | ArkLib</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* CSS interno (integración obligatoria en el head) */
+        #inicio { scroll-margin-top: 12px; }
+        .destacado-interno { border-left: 4px solid #972a20; padding-left: 8px; }
+    </style>
+</head>
 <body>
 
 <noscript>
@@ -306,4 +300,5 @@
 <script src="js/app.js" defer></script>
 </body>
 </html>
+
  
